@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rohan Kumar Singh - Full-Stack Developer specializing in AI-enabled code generation, cloud-native architectures, and distributed systems. Expert in Python, Kotlin, MERN stack, and AWS." />
+    <meta name="keywords" content="Full-Stack Developer, Python, Kotlin, React, AWS, AI, Machine Learning, MERN Stack, Cloud Architecture" />
+    <meta name="author" content="Rohan Kumar Singh" />
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Rohan Kumar Singh - Full-Stack Developer" />
+    <meta property="og:description" content="Full-Stack Developer specializing in AI-enabled code generation, cloud-native architectures, and distributed systems." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rohankumarsingh.dev" />
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rohan Kumar Singh - Full-Stack Developer" />
+    <meta name="twitter:description" content="Full-Stack Developer specializing in AI-enabled code generation and cloud-native architectures" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rohan Kumar Singh",
+      "jobTitle": "Full-Stack Developer",
+      "description": "Specializing in AI-enabled code generation, cloud-native architectures, and distributed systems",
+      "url": "https://rohankumarsingh.dev",
+      "sameAs": [
+        "https://github.com/Rohankumarsingh0101",
+        "https://www.linkedin.com/in/rohansingh0101",
+        "https://www.youtube.com/@parichay159"
+      ]
+    }
+    </script>
+    
+    <title>Rohan Kumar Singh - Full-Stack Developer</title>
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://images.pexels.com" />
+    <link rel="dns-prefetch" href="https://images.pexels.com" />
+    
+    <!-- Critical CSS for font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+      /* Critical CSS for initial paint */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      /* Loading screen */
+      #loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease-out;
+      }
+      
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-top-color: white;
+        animation: spin 1s ease-in-out infinite;
+      }
+      
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loading">
+      <div class="loading-spinner"></div>
+    </div>
+    
+    <div id="root"></div>
+    
+    <script>
+      // Remove loading screen after content loads
+      window.addEventListener('load', () => {
+        const loading = document.getElementById('loading');
+        loading.style.opacity = '0';
+        setTimeout(() => {
+          loading.style.display = 'none';
+        }, 500);
+      });
+      
+      // Performance monitoring
+      if ('performance' in window && 'measure' in window.performance) {
+        window.addEventListener('load', () => {
+          const perfData = performance.getEntriesByType('navigation')[0];
+          console.log('Page Load Time:', perfData.loadEventEnd - perfData.fetchStart, 'ms');
+        });
+      }
+    </script>
+    
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

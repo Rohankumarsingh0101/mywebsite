@@ -1,0 +1,87 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5; /* Light background */
+  font-family: sans-serif;
+}
+
+.login-container {
+  background-color: #fff;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex; /* Use flexbox */
+  width: 700px; /* Adjust width as needed */
+}
+
+.form-side {
+  flex: 1; /* Takes up half the space */
+  padding: 30px;
+}
+
+.info-side {
+  background-color: #ff4b2b; /* Example color */
+  color: #fff;
+  flex: 1; /* Takes up half the space */
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 10px; /* Round top-right corner */
+  border-bottom-right-radius: 10px; /* Round bottom-right corner */
+}
+
+.info-side h1 {
+  color: #f0f2f5; /* Set text color to light grey */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4267b2; /* Facebook blue color */
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #365899; /* Darker blue on hover */
+}
+
+p {
+  text-align: center;
+  margin-top: 15px;
+  color: #333;
+}
+
+button {
+  margin: 10px;
+  padding: 8px 15px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0b0c0b;
+}
